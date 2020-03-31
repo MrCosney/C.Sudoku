@@ -1,26 +1,16 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   sudoku.c                                           :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/03/29 16:12:42 by cosney            #+#    #+#             */
-/*   Updated: 2020/03/30 19:43:45 by cosney         ###   ########.fr         */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "HEADER.h"
 
 int		solution(char sud[][9], int var)
 {
-	int		position[2];
+	int	position[2];
 	char	value;
 
 	if (var == 0)
 		empty_spots(sud, position);
 	if (var == 1)
+	{
 		reverse_empty_spots(sud, position);
+	}
 	if (position[0] == -1)
 		return (0);
 	value = '1';
@@ -40,8 +30,8 @@ int		solution(char sud[][9], int var)
 
 int		main(int argc, char **argv)
 {
-	char sudoku[9][9];
-	char rev_sudoku[9][9];
+	char	sudoku[9][9];
+	char	rev_sudoku[9][9];
 
 	if (check(argc, argv))
 	{

@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   check_correct_position.c                           :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ccurtain <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/03/15 19:53:26 by ccurtain          #+#    #+#             */
-/*   Updated: 2020/03/15 20:03:45 by ccurtain         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 int		is_in_square(char sud[][9], int *pos, char value);
 
 int		check_correct_position(char sud[][9], int *pos, char value)
