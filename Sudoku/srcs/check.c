@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   check.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/04/02 11:11:16 by cosney            #+#    #+#             */
+/*   Updated: 2020/04/02 11:22:56 by cosney           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 int		ft_checkchars(int argc, char **argv)
 {
 	int i;
@@ -7,7 +19,8 @@ int		ft_checkchars(int argc, char **argv)
 	while (i < argc)
 	{
 		j = 0;
-		while ((argv[i][j] >= '1' && argv[i][j] <= '9') || (argv[i][j] == '.'))
+		while ((argv[i][j] >= '1' && argv[i][j] <= '9') 
+				|| (argv[i][j] == '.'))
 			j++;
 		if (j != 9)
 			return (1);
@@ -59,7 +72,8 @@ int		check_repeat_chars_in_row(int argc, char **argv)
 			j = i + 1;
 			while (argv[a][j] != '\0')
 			{
-				if (argv[a][i] == argv[a][j] && argv[a][j] != '.')
+				if (argv[a][i] == argv[a][j] && 
+						argv[a][j] != '.')
 					return (1);
 				j++;
 			}
@@ -85,7 +99,8 @@ int		check_repeat_chars_in_col(int argc, char **argv)
 			j = a + 1;
 			while (j < argc)
 			{
-				if (argv[j][i] == argv[a][i] && argv[j][i] != '.')
+				if (argv[j][i] == argv[a][i] 
+						&& argv[j][i] != '.')
 					return (1);
 				j++;
 			}

@@ -1,10 +1,30 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: cosney <marvin@42.fr>                      +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2020/04/02 11:42:30 by cosney            #+#    #+#              #
+#    Updated: 2020/04/02 12:37:41 by cosney           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = sudoku
-FILES = srcs/check.c srcs/display.c srcs/empty_spots.c srcs/is_in_square.c srcs/sudoku_array.c srcs/comparator.c srcs/reverse_empty_spots.c srcs/check_correct_position.c srcs/sudoku.c
+
+FILES = srcs/*.c
+
 INCLUDES = includes/
 
-all:
+all: compile
+
+compile:
 	@gcc $(FILES) -I$(INCLUDES) -o $(NAME)
 
 clean:
-	/bin/rm -f $(NAME)
-re: clean all
+	@/bin/rm -f *.o
+
+fclean: clean
+	@/bin/rm -f $(NAME)
+
+re: fclean all
