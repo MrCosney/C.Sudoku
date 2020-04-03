@@ -6,7 +6,7 @@
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/02 11:25:41 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/02 11:25:50 by cosney           ###   ########.fr       */
+/*   Updated: 2020/04/03 09:35:03 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,13 @@
 
 int		solution(char sud[][9], int var)
 {
-	int	position[2];
+	int		position[2];
 	char	value;
 
 	if (var == 0)
 		empty_spots(sud, position);
 	if (var == 1)
-	{
 		reverse_empty_spots(sud, position);
-	}
 	if (position[0] == -1)
 		return (0);
 	value = '1';

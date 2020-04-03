@@ -6,16 +6,16 @@
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/02 11:24:41 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/02 14:03:06 by cosney           ###   ########.fr       */
+/*   Updated: 2020/04/03 09:38:30 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "header.h"
 
-void		display(char sud[][9])
+void	display(char sud[][9])
 {
-	int x;
-	int y;
+	int	x;
+	int	y;
 
 	x = 0;
 	while (x < 9)
