@@ -6,11 +6,11 @@
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/02 11:25:32 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/03 09:05:59 by cosney           ###   ########.fr       */
+/*   Updated: 2020/04/03 11:38:41 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "header.h"
 
 void		sudoku_array(int argc, char **argv, char sud[][9])
 {

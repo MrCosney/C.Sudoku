@@ -6,31 +6,30 @@
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/02 11:25:07 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/02 11:25:09 by cosney           ###   ########.fr       */
+/*   Updated: 2020/04/03 12:44:55 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		is_in_square(char sud[][9], int *pos, char value)
 {
-	int index;
-	int index_2;
+	int x;
+	int y;
 	int sq_x;
 	int sq_y;
 
 	sq_x = pos[1] / 3;
 	sq_y = pos[0] / 3;
-	index = sq_y * 3;
-	while (index < (sq_y * 3 + 3))
+	x = sq_y * 3;
+	while (x < (sq_y * 3 + 3))
 	{
-		index_2 = sq_x * 3;
-		while (index_2 < (sq_x * 3 + 3))
+		y = sq_x * 3;
+		while (y < (sq_x * 3 + 3))
 		{
-			if (sud[index][index_2] == value
-				&& (pos[0] != index && pos[1] != index_2))
+			if (sud[x][y] == value && (pos[0] != x && pos[1] != y))
 				return (1);
-			index_2++;
+			y++;
 		}
-		index++;
+		x++;
 	}
 	return (0);
 }

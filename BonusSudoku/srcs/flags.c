@@ -6,12 +6,11 @@
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/02 13:26:01 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/02 19:37:48 by cosney           ###   ########.fr       */
+/*   Updated: 2020/04/03 11:34:38 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+#include "header.h"
 
 int		flags(int argc, char **argv)
 {

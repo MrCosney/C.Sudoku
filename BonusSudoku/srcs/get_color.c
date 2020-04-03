@@ -6,11 +6,11 @@
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/02 16:26:03 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/03 09:02:12 by cosney           ###   ########.fr       */
+/*   Updated: 2020/04/03 11:32:27 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "header.h"
 
 int		get_color(int argc, char **argv)
 {

@@ -6,11 +6,11 @@
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/02 11:11:16 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/03 09:06:15 by cosney           ###   ########.fr       */
+/*   Updated: 2020/04/03 11:37:09 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "header.h"
 
 int		ft_checkchars(int argc, char **argv)
 {
