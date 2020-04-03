@@ -6,7 +6,7 @@
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/02 11:25:32 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/02 19:45:51 by cosney           ###   ########.fr       */
+/*   Updated: 2020/04/03 09:05:59 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,9 @@ void		sudoku_array(int argc, char **argv, char sud[][9])
 	z = 1;
 	while (z < argc)
 	{
-		if (strcmp("-red", argv[z]) == 0 || strcmp("-grn", argv[z]) == 0)
+		if (strcmp("-red", argv[z]) == 0 || strcmp("-grn", argv[z]) == 0 || \
+				strcmp("-yel", argv[z]) == 0 || strcmp ("-blu", argv[z]) == 0 \
+				|| strcmp("-w", argv[z]) == 0)
 		{
 			z++;
 			continue;

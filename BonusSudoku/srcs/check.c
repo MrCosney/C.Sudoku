@@ -6,7 +6,7 @@
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/02 11:11:16 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/02 19:45:05 by cosney           ###   ########.fr       */
+/*   Updated: 2020/04/03 09:06:15 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,9 @@ int		ft_checkchars(int argc, char **argv)
 	i = 1;
 	while (i < argc)
 	{
-		if (strcmp("-red", argv[i]) == 0 || strcmp("-grn", argv[i]) == 0)
+		if (strcmp("-red", argv[i]) == 0 || strcmp("-grn", argv[i]) == 0 || \
+				strcmp("-yel", argv[i]) == 0 || strcmp("-blu", argv[i]) == 0 \
+				|| strcmp("-w", argv[i]) == 0)
 		{
 			i++;
 			continue;

@@ -6,7 +6,7 @@
 #    By: cosney <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/02 11:42:30 by cosney            #+#    #+#              #
-#    Updated: 2020/04/02 12:37:41 by cosney           ###   ########.fr        #
+#    Updated: 2020/04/03 08:37:20 by cosney           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,9 +16,9 @@ FILES = srcs/*.c
 
 INCLUDES = includes/
 
-all: compile
+all: $(NAME)
 
-compile:
+$(NAME):
 	@gcc $(FILES) -I$(INCLUDES) -o $(NAME)
 
 clean:
