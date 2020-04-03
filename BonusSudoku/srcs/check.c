@@ -6,9 +6,11 @@
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/02 11:11:16 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/02 11:22:56 by cosney           ###   ########.fr       */
+/*   Updated: 2020/04/02 18:31:06 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 int		ft_checkchars(int argc, char **argv)
 {
@@ -18,6 +20,11 @@ int		ft_checkchars(int argc, char **argv)
 	i = 1;
 	while (i < argc)
 	{
+		if (strcmp("-red", argv[i]) == 0)
+		{
+			i++;
+			continue;
+		}
 		j = 0;
 		while ((argv[i][j] >= '1' && argv[i][j] <= '9') 
 				|| (argv[i][j] == '.'))
@@ -114,7 +121,7 @@ int		check_repeat_chars_in_col(int argc, char **argv)
 
 int		check(int argc, char **argv)
 {
-	if (argc != 10)
+	if (argc < 10 && argc > 13)
 		return (1);
 	if (ft_checkchars(argc, argv))
 		return (1);

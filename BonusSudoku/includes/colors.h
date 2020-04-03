@@ -1,34 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   display.c                                          :+:      :+:    :+:   */
+/*   colors.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/02 11:24:41 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/02 14:03:06 by cosney           ###   ########.fr       */
+/*   Created: 2020/04/02 18:01:28 by cosney            #+#    #+#             */
+/*   Updated: 2020/04/02 18:07:46 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef		COLORS_H
+# define	COLORS_H
 
-void		display(char sud[][9])
-{
-	int x;
-	int y;
+#define KNRM  "\x1B[0m"
+#define KRED  "\x1B[31m"
+#define KGRN  "\x1B[32m"
+#define KYEL  "\x1B[33m"
+#define KBLU  "\x1B[34m"
 
-	x = 0;
-	while (x < 9)
-	{
-		y = 0;
-		while (y < 9)
-		{
-			write(1, &sud[x][y], 1);
-			if (y != 8)
-				write(1, " ", 1);
-			y++;
-		}
-		write(1, "\n", 1);
-		x++;
-	}
-}
+#endif

@@ -1,34 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   display.c                                          :+:      :+:    :+:   */
+/*   get_color.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/04/02 11:24:41 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/02 14:03:06 by cosney           ###   ########.fr       */
+/*   Created: 2020/04/02 16:26:03 by cosney            #+#    #+#             */
+/*   Updated: 2020/04/02 16:52:57 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <string.h>
 
-void		display(char sud[][9])
+int		get_color(int argc, char **argv)
 {
-	int x;
-	int y;
+	int	index;
 
-	x = 0;
-	while (x < 9)
+	index = 0;
+	while (index < argc)
 	{
-		y = 0;
-		while (y < 9)
-		{
-			write(1, &sud[x][y], 1);
-			if (y != 8)
-				write(1, " ", 1);
-			y++;
-		}
-		write(1, "\n", 1);
-		x++;
+		if (strcmp("-red", argv[index]) == 0)
+			return (100);
+		index++;
 	}
+	return (0);
 }

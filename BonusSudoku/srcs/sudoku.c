@@ -6,7 +6,7 @@
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/02 11:25:41 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/02 11:25:50 by cosney           ###   ########.fr       */
+/*   Updated: 2020/04/02 15:14:45 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int		main(int argc, char **argv)
 			write(1, "Error\n", 6);
 			return (0);
 		}
-		display(sudoku);
+		display(sudoku, argc, argv);
 	}
 	else
 		write(1, "Error\n", 6);
