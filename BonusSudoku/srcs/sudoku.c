@@ -6,7 +6,7 @@
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/02 11:25:41 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/02 19:34:59 by cosney           ###   ########.fr       */
+/*   Updated: 2020/04/03 13:17:27 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		solution(char sud[][9], int var)
 {
-	int	position[2];
+	int		position[2];
 	char	value;
 
 	if (var == 0)

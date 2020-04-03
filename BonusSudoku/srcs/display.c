@@ -6,7 +6,7 @@
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/02 11:24:41 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/03 11:36:43 by cosney           ###   ########.fr       */
+/*   Updated: 2020/04/03 13:13:34 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ void		write_display(char sud[][9])
 		x++;
 	}
 	fclose(fp);
+	printf("--->Sudoku saved into 'Solved Sudoku.txt' file.\n");
 }
 
 void		new_display(char sud[][9], char *color)
@@ -61,10 +62,8 @@ void		new_display(char sud[][9], char *color)
 
 void		display(char sud[][9], int argc, char **argv)
 {
-	int	flag;
 	int	color;
 
-	flag = flags(argc, argv);
 	color = get_color(argc, argv);
 	if (color == 100)
 		new_display(sud, KRED);
