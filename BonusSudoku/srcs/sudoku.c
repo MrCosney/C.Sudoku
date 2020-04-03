@@ -6,7 +6,7 @@
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/02 11:25:41 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/02 15:14:45 by cosney           ###   ########.fr       */
+/*   Updated: 2020/04/02 19:34:59 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,8 @@ int		main(int argc, char **argv)
 		write(1, "Error\n", 6);
 		return (0);
 	}
-	sudoku_array(argv, sudoku);
-	sudoku_array(argv, rev_sudoku);
+	sudoku_array(argc, argv, sudoku);
+	sudoku_array(argc, argv, rev_sudoku);
 	if (solution(sudoku, 0) == 0 && solution(rev_sudoku, 1) == 0)
 	{
 		if (comparator(sudoku, rev_sudoku))

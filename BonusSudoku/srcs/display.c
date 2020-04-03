@@ -6,7 +6,7 @@
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/02 11:24:41 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/02 18:32:16 by cosney           ###   ########.fr       */
+/*   Updated: 2020/04/02 19:42:03 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,8 +68,10 @@ void		display(char sud[][9], int argc, char **argv)
 
 	flag = flags(argc, argv);
 	color = get_color(argc, argv);
-	if (flag == 0)
-		new_display(sud, KNRM);
 	if (color == 100)
 		new_display(sud, KRED);
+	else if (color == 200)
+		new_display(sud, KGRN);
+	else
+		new_display(sud, KNRM);
 }

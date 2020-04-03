@@ -6,7 +6,7 @@
 /*   By: cosney <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/04/02 13:26:01 by cosney            #+#    #+#             */
-/*   Updated: 2020/04/02 15:17:19 by cosney           ###   ########.fr       */
+/*   Updated: 2020/04/02 19:37:48 by cosney           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int		flags(int argc, char **argv)
 	f = 0;
 	while (index < argc)
 	{
-		if (strcmp("-c", argv[index]) == 0)
+		if (strcmp("-red", argv[index]) == 0)
 			f += 7;
 		if (strcmp("-w", argv[index]) == 0)
 			f += 3;
